@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071c29">
+<title>Happy Birthday Nigruta 🥷🏿</title>
+<style>
+:root{--bg:#071722;--cyan:#65dce0;--white:#e9f8fa;--muted:#a5c6d0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Georgia,serif;overflow-x:hidden}
+.hero{min-height:100svh;display:flex;justify-content:center;align-items:center;text-align:center;padding:45px 18px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#12465a 0%,transparent 55%),linear-gradient(145deg,#06131f,#102e40,#071722)}
+.hero:before{content:"";position:absolute;inset:0;opacity:.17;background-image:linear-gradient(#69dce0 1px,transparent 1px),linear-gradient(90deg,#69dce0 1px,transparent 1px);background-size:45px 45px;mask-image:linear-gradient(to bottom,black,transparent)}
+.content{width:min(650px,100%);position:relative;z-index:2}
+.medical-icon{font-size:65px;filter:drop-shadow(0 0 20px #65dce077);animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.kicker{font:600 10px Arial,sans-serif;letter-spacing:4px;color:var(--cyan);margin-top:15px}
+h1{font-size:clamp(43px,10vw,76px);line-height:1;font-weight:normal;margin:20px 0;color:white;text-shadow:0 0 25px #65dce044}
+h1 em{display:block;color:var(--cyan);font-style:italic;margin-top:10px}
+.subtitle{color:#c4e0e7;font-size:18px;font-style:italic}
+.ecg{margin:28px auto;width:min(350px,90%);height:55px}
+.ecg svg{width:100%;height:100%;overflow:visible}
+.ecg path{fill:none;stroke:var(--cyan);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:500;animation:heartbeat 3s linear infinite}
+@keyframes heartbeat{0%{stroke-dashoffset:500}100%{stroke-dashoffset:0}}
+.count-card{margin:25px auto;padding:25px 14px;border:1px solid #4c9aab88;border-radius:20px;background:linear-gradient(135deg,#153849dd,#102333ee);box-shadow:0 15px 45px #0007}
+.count-title{color:#c2e9eb;font-size:16px}
+.countdown{display:flex;justify-content:center;gap:clamp(8px,3vw,22px);margin:22px 0}
+.unit{min-width:53px}
+.unit strong{display:block;font:300 clamp(27px,6vw,40px) Arial,sans-serif;color:var(--cyan)}
+.unit span{display:block;font:10px Arial,sans-serif;letter-spacing:2px;color:var(--muted);margin-top:7px}
+.date{color:#9bcbd6;font:12px Arial,sans-serif;letter-spacing:1px}
+.doctor-label{display:inline-block;padding:9px 17px;border:1px solid #65dce066;border-radius:30px;color:var(--cyan);font:11px Arial,sans-serif;letter-spacing:2px;margin-top:10px}
+.open-btn{border:1px solid var(--cyan);border-radius:50px;background:linear-gradient(135deg,#168b9c,#10516e);color:white;padding:16px 30px;font:600 12px Arial,sans-serif;letter-spacing:2px;cursor:pointer;box-shadow:0 8px 30px #65dce044;transition:.25s}
+.open-btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px #65dce066}
+#openArea{margin-top:25px}
+.stay{color:#8bbdc9;font-style:italic;margin-top:25px}
+.decor{position:absolute;color:#65dce0;opacity:.15;pointer-events:none}
+.decor.one{top:8%;left:7%;font-size:65px}
+.decor.two{bottom:9%;right:7%;font-size:75px}
+.letter-section{display:none;min-height:100vh;padding:45px 15px 60px;background:radial-gradient(ellipse at 10% 10%,#15566a,transparent 40%),linear-gradient(145deg,#0b1b2a,#12394a,#071722)}
+.letter-wrap{max-width:760px;margin:auto}
+.letter-label{text-align:center;font:600 10px Arial,sans-serif;letter-spacing:3px;color:var(--cyan);margin-bottom:20px}
+.paper{background:linear-gradient(145deg,#f4fbf9,#e5f2ef);color:#172d36;padding:clamp(25px,6vw,55px);border-radius:12px;box-shadow:0 20px 65px #0008;position:relative;overflow:hidden}
+.paper:before{content:"";position:absolute;inset:10px;border:1px solid #9bc4c4;border-radius:7px;pointer-events:none}
+.paper-header{text-align:center;color:#247d86;font:600 10px Arial,sans-serif;letter-spacing:2px;margin-bottom:28px;position:relative}
+.paper h2{text-align:center;font-size:clamp(27px,6vw,43px);font-weight:normal;color:#146b79;margin:0 0 12px;position:relative}
+.paper .subheading{text-align:center;color:#57858b;font:11px Arial,sans-serif;letter-spacing:2px;margin-bottom:35px;position:relative}
+.paper p{font-size:clamp(15px,2.5vw,18px);line-height:1.9;margin:0 0 20px;position:relative}
+.paper .signature{text-align:right;color:#167d83;font-style:italic;margin-top:35px}
+.rx{display:flex;align-items:center;gap:12px;border-top:1px dashed #85b4b5;border-bottom:1px dashed #85b4b5;padding:15px 0;margin-top:30px;color:#247d86;font:12px Arial,sans-serif;position:relative}
+.rx strong{font-size:25px}
+.final-message{text-align:center;color:#a9dce3;font-size:18px;font-style:italic;line-height:1.8;margin:30px 0}
+.footer{text-align:center;color:#75aeba;font:10px Arial,sans-serif;letter-spacing:2px;margin-top:30px}
+#letterSection{scroll-margin-top:15px}
+@media(max-width:500px){.unit{min-width:48px}.count-card{padding:22px 8px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="decor one">✚</div><div class="decor two">⚕</div>
+  <div class="content">
+    <div class="medical-icon">🩺</div>
+    <div class="kicker">Timepass mai banaya. judge mat kar 🙂</div>
+    <h1>HAPPY BIRTHDAY<em>NIGRUTA 🫂</em></h1>
+    <p class="subtitle">Future Doctor Atharva</p>
+    <div class="doctor-label"></div>
+    <div class="ecg"><svg viewBox="0 0 350 55" preserveAspectRatio="none"><path d="M0 28 H85 L105 28 L119 9 L135 48 L151 18 L165 28 H210 L225 28 L239 9 L255 48 L271 18 L285 28 H350"/></svg></div>
+    <div class="count-card">
+      <div class="count-title"> Wait kar </div>
+      <div class="countdown">
+        <div class="unit"><strong id="days">--</strong><span>DAYS</span></div>
+        <div class="unit"><strong id="hours">--</strong><span>HOURS</span></div>
+        <div class="unit"><strong id="minutes">--</strong><span>MINS</span></div>
+        <div class="unit"><strong id="seconds">--</strong><span>SECS</span></div>
+      </div>
+      <div class="date">19 DECEMBER 2026 · 12:00 AM IST</div>
+    </div>
+    <div id="openArea" hidden><button class="open-btn" id="openBtn">OPEN YOUR PRESCRIPTION </button></div>
+    <div class="stay" id="stayText">Wait kar re </div>
+  </div>
+</section>
+<section class="letter-section" id="letterSection">
+  <div class="letter-wrap">
+    <div class="letter-label">CONFIDENTIAL ·  BIRTHDAY RECORD</div>
+    <article class="paper">
+      <h2>Happy Birthday Nigruta! ❤️</h2>
+      <div class="subheading">PATIENT: FAIZAN · DOCTOR: ATHARVA</div>
+      <p>Ayyy bhaiiii!</p>
+      <p>Sorry is baar tere bday ko mai available nahi. Lekin meko sach mai bohot yaad aati teri.</p>
+      <p>Mai diary bhi likhta tere naam ke. Tere baad bohot dost mile lekin tere jaisa ek bhi nahi mila.</p>
+      <p>Meko malum nahi ye teko milega bhi yaa nahi kyuki meko malum nahi ye countdown wala shot kaam bhi karega yaa nahi lekin fir bhi try karunga banane ki.</p>
+      <p>And jaldi aa Russia se. Bohot yaad aati teri.</p>
+      <p>Aur haan, thoda nit reh waha. wahape teko koyi samjhane wala nahi hoga.</p>
+      <p>bohot saal ho gaye bhai apne dosti ko. Abhi toh aur bohot bdays baaki hai. Agli baar birthday pe saath rahenge aur full raade dalinge.</p>
+      <p>Once again, HAPPY BIRTHDAY mere bhai! ❤️</p>
+      <p class="signature">Tera koyi apna ?</p>
+    </article>
+    <div class="final-message">Distance: India to Russia.</div>
+    <div class="footer">MADE WITH TIMEPASS · 19 DECEMBER 2026</div>
+  </div>
+</section>
+<script>
+const unlockAt = Date.now() - 1000;
+const openArea = document.getElementById('openArea');
+const openBtn = document.getElementById('openBtn');
+const letterSection = document.getElementById('letterSection');
+const stayText = document.getElementById('stayText');
+
+function updateCountdown() {
+  const diff = unlockAt - Date.now();
+  if (diff <= 0) {
+    ['days','hours','minutes','seconds'].forEach(id => {
+      document.getElementById(id).textContent = '00';
+    });
+    openArea.hidden = false;
+    stayText.textContent = 'The birthday prescription is ready! ❤️';
+    return;
+  }
+  document.getElementById('days').textContent = String(Math.floor(diff / 86400000)).padStart(2,'0');
+  document.getElementById('hours').textContent = String(Math.floor((diff % 86400000) / 3600000)).padStart(2,'0');
+  document.getElementById('minutes').textContent = String(Math.floor((diff % 3600000) / 60000)).padStart(2,'0');
+  document.getElementById('seconds').textContent = String(Math.floor((diff % 60000) / 1000)).padStart(2,'0');
+  openArea.hidden = true;
+}
+openBtn.addEventListener('click', () => {
+  if (Date.now() >= unlockAt) {
+    letterSection.style.display = 'block';
+    letterSection.scrollIntoView({behavior:'smooth'});
+  }
+});
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+</body>
+</html>
